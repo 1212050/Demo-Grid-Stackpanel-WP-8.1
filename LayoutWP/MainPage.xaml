@@ -1,0 +1,71 @@
+﻿<phone:PhoneApplicationPage x:Class="LayoutWP.MainPage"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            mc:Ignorable="d"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            SupportedOrientations="Portrait"
+                            Orientation="Portrait"
+                            shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="*" />
+
+            <ColumnDefinition Width="*" />
+
+            <ColumnDefinition Width="*" />
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="150" />
+
+            <RowDefinition Height="150" />
+
+        </Grid.RowDefinitions>
+
+        <Button Content="Grid1"
+                Grid.Row="0"
+                Grid.Column="0"
+                Click="btnL1G_Click" />
+
+        <Button Content="Grid2"
+                Grid.Row="0"
+                Grid.Column="1"
+                Click="btnL2G_Click" />
+
+        <Button Content="Grid3"
+                Grid.Row="0"
+                Grid.Column="2"
+                Click="btnL3G_Click" />
+
+        <Button Content="Stack1"
+                Grid.Row="1"
+                Grid.Column="0"
+                Click="btnL1S_Click" />
+
+        <Button Content="Stack2"
+                Grid.Row="1"
+                Grid.Column="1"
+                Click="btnL2S_Click" />
+
+        <Button Content="Stack3"
+                Grid.Row="1"
+                Grid.Column="2"
+                Click="btnL3S_Click" />
+
+    </Grid>
+
+
+
+</phone:PhoneApplicationPage>

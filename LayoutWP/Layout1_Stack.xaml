@@ -1,0 +1,59 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="LayoutWP.Layout1_Stack"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <StackPanel x:Name="LayoutRoot"
+                Orientation="Vertical"
+                VerticalAlignment="Stretch">
+
+        <StackPanel x:Name="r1"
+                    Orientation="Horizontal"
+                    VerticalAlignment="Top"
+                    Height="80">
+
+            <TextBlock x:Name="txtUsername"
+                       Text="Username:"
+                       VerticalAlignment="Center"/>
+            <TextBox x:Name="tbxUsername"
+                     Width="379"
+                     HorizontalAlignment="Right"/>
+        </StackPanel>
+        <StackPanel x:Name="r2"
+                    Orientation="Horizontal"
+                    VerticalAlignment="Top"
+                    Height="80">
+            <TextBlock x:Name="txtPassword"
+                       Text="Password:"
+                       VerticalAlignment="Center" />
+            <TextBox x:Name="tbxPassword"
+                     Width="379"
+                     HorizontalAlignment="Right" />
+        </StackPanel>
+
+        <StackPanel x:Name="r3"
+                    Orientation="Horizontal"
+                    VerticalAlignment="Top"
+                    Height="80">
+            <Button x:Name="btnLogin"
+                    Content="Log in"
+                    Width="240" />
+            <Button x:Name="btnCancel"
+                    Content="Cancel"
+                    Width="240" />
+
+        </StackPanel>
+
+    </StackPanel>
+
+</phone:PhoneApplicationPage>

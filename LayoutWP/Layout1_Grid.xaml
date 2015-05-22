@@ -1,0 +1,92 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="LayoutWP.Layout1_Grid"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot"
+          Background="Transparent"
+          VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="*" />
+
+            <ColumnDefinition Width="2*" />
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="80" />
+            <RowDefinition Height="80" />
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="txtUsername"
+                   HorizontalAlignment="Left"
+                   Margin="44,0,0,20"
+                   TextWrapping="Wrap"
+                   Text="Username:"
+                   VerticalAlignment="Bottom"
+                   Grid.Row="0"
+                   Grid.Column="0" />
+
+        <TextBlock x:Name="txtPassword"
+                   HorizontalAlignment="Left"
+                   Margin="44,0,0,23"
+                   TextWrapping="Wrap"
+                   Text="Password:"
+                   VerticalAlignment="Bottom"
+                   Grid.Row="1"
+                   Grid.Column="0" />
+        <TextBox HorizontalAlignment="Left"
+                 Height="72"
+                 Margin="0,8,0,0"
+                 TextWrapping="Wrap"
+                 Text="TextBox"
+                 VerticalAlignment="Top"
+                 Width="310"
+                 Grid.Row="0"
+                 Grid.Column="1" />
+        <TextBox Grid.Column="1"
+                 HorizontalAlignment="Left"
+                 Height="72"
+                 Margin="0,5,0,0"
+                 Grid.Row="1"
+                 TextWrapping="Wrap"
+                 Text="TextBox"
+                 VerticalAlignment="Top"
+                 Width="310" />
+        <Grid Grid.ColumnSpan="2"
+              HorizontalAlignment="Left"
+              Height="80"
+              Margin="10,10,0,-54"
+              Grid.Row="2"
+              VerticalAlignment="Top"
+              Width="460">
+            <Button x:Name="btnLogin"
+                    Content="Log in"
+                    HorizontalAlignment="Left"
+                    Margin="10,10,0,0"
+                    VerticalAlignment="Top"
+                    Width="208" />
+            <Button x:Name="btnCancel"
+                    Content="Cancel"
+                    HorizontalAlignment="Left"
+                    Margin="223,10,0,0"
+                    VerticalAlignment="Top"
+                    Width="237" />
+        </Grid>
+
+
+    </Grid>
+
+</phone:PhoneApplicationPage>
